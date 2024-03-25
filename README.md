@@ -1,6 +1,8 @@
 # SyShell
 ⚒️ A simple but fully working reverse shell with built-in commands made in Python. ⚒️
 
+- Checked against 15 anti-viruses, completely undetected. At least so far...
+
 
 ## About
 SyShell is a reverse shell that offers pre-built commands while also offering complete control over the machine, specifically built for `Windows` systems (Executer). The listener (Syshell_listener.py) has been tested on both Windows and Linux, both work perfectly. 
