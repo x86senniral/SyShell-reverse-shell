@@ -1,0 +1,6 @@
+requests
+urllib3
+ip2geotools
+psutil
+pywin32
+cryptography
